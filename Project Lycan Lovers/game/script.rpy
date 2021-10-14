@@ -54,23 +54,23 @@ label m_route_after_choice_1:
     "Going back home and watching a cheesy horror flick ain’t that bad of an idea!"
 
     #scene ---
-    "Back at the apartment..."
+    "{i}Back at the apartment{/i}..."
     
     "A few hours have passed, the sky has gotten darker, and the lights are off in my humble abode."
-    "All of them, save the glimmering light of my television screen, as it plays the end of Death Gun 4: One Last Bullet."
+    "All of them, save the glimmering light of my television screen, as it plays the end of {i}Death Gun 4: One Last Bullet{/i}."
     "I am alone, with nothing but a comfy blanket on top of me and a big bowl of popcorn in my nervous palms."
     tv "\"No Tommy, you can’t shoot Death with his own Death Gun. Who knows what’ll happen?\""
     tv "\"If you do, the cycle of violence won’t stop! You have to end it here and now!\""
     tv "\"No, Mary. The Death Gun is nearly empty, all except for One. Last. Bullet.\""
-    tv "\"And it’s got his name written all over it.\""
+    tv "\"And it’s got {i}his{/i} name written all over it.\""
     tv "BANG!!!"
     "The gunshot causes me to lurch backward, throwing popcorn everywhere."
     "What a twist! I never expected Tommy to be so bold and brash! A truly gripping plot twist!"
-    "As the credits roll, I grab the remote, getting ready to put on Death Gun 5: The New Reaper, when I hear a howling from outside."
+    "As the credits roll, I grab the remote, getting ready to put on {i}Death Gun 5: The New Reaper{/i}, when I hear a howling from outside."
     "Which is odd, to say the least… I can’t remember the last time a wolf was so close to the city…"
-    "But I shrug it off. That’s someone else’s problem, not mine."
+    "But I shrug it off. That’s someone {i}else’s{/i} problem, not mine."
     "I grab another fistful of popcorn and press play."
-    "Oh yeah. Tonight is gonna be perfect."
+    "Oh yeah. Tonight is gonna be {i}perfect{/i}."
 
     jump end_game
 
