@@ -1,9 +1,9 @@
-﻿# The script of the game goes in this file.
+﻿# script.rpy
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+define mc = Character("You")
 
 
 # The game starts here.
@@ -20,13 +20,35 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen happy
+    # show eileen happy
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    mc "It is a cool October night in the city as I roam its crowded streets."
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    mc "The sky is lit by the orange incandescent lights and a moon waning in the sky above me."
+
+    mc "Noisy people walk along the paved concrete, as I sadly spend yet another Friday night alone."
+
+    mc "Another soul lost within the big atmosphere of the downtown district."
+
+    mc "All of my friends are out with their partners, and I can’t blame them."
+
+    mc "Tomorrow is Halloween! Of course everyone’s gonna go out and party!"
+
+    mc "That or they're all making last-minute costume arrangements or whatever else couples do!"
+
+    mc "All without me…"
+
+    mc "Maybe I should go back home and watch some horror movies…"
+
+    mc "It would be better than just wandering aimlessly like some stooge…"
+
+    mc "But on the other hand, the night is still young! Filled with possibility, and life!"
+
+    mc "There might even be some hotties with bodies on the prowl!"
+
+    mc "So what should I do?"
 
     # This ends the game.
 
