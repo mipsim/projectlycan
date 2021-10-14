@@ -22,7 +22,7 @@ label start:
 
     # show eileen happy
 
-    # These display lines of dialogue.
+    # Opening [1-12]
 
     mc "It is a cool October night in the city as I roam its crowded streets."
 
@@ -48,8 +48,24 @@ label start:
 
     mc "There might even be some hotties with bodies on the prowl!"
 
+    jump choice_1
+
+menu choice_1:
     mc "So what should I do?"
 
-    # This ends the game.
+    "Go back home and watch some horror movies.":
+        jump m_route_after_choice_1
 
+    "Go on an adventure.":
+        jump a_route_after_choice_1
+
+label m_route_after_choice_1:
+    mc "Reached M Route"
+
+    jump end_game
+
+label a_route_after_choice_1:
+    mc "Reached A Route"
+
+label end_game:
     return
