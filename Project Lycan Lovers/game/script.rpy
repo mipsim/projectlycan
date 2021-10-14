@@ -75,7 +75,17 @@ label m_route_after_choice_1:
     jump end_game
 
 label a_route_after_choice_1:
-    mc "Reached A Route"
+    "Taking in a deep breath, I continue walking along the streets, trying to find something of interest."
+    "I refuse to let this wonderful night go to waste. I can always watch those movies some other time."
+    "I’m already here, so why waste the opportunity?"
+    "As I wander and maneuver the city streets, it just occurs to me how many different sights and sounds the nightlife has to offer."
+    "The glowing of neon and cacophony of motor vehicles assault my eyes and ears until I become numb to the overstimulation."
+    "That is, until one sign, in particular, catches my eye."
+    "It has a neon green sign, with a cartoony drawing of an unbalanced table covered in a variety of drinks nearly spilling over."
+    "The bar’s name is the Tipsy Table and a pair of descending staircases invite me to venture inside."
+    "The place is humming with a certain energy to it, and the sound of a large ensemble band performing can be heard from inside."
+    "Figuring that a drink may help calm my nerves and prepare me for what I expect to be one hell of a night, I make my way downwards."
+    "Prepared for just about anything, I open the door."
 
 label end_game:
 
