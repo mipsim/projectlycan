@@ -48,10 +48,10 @@ label start:
 menu choice_1:
     "So what should I do?"
 
-    "Go back home and watch some horror movies.":
+    "Go back home and watch some horror movies":
         jump m_route_after_choice_1
 
-    "Go on an adventure.":
+    "Go on an adventure":
         jump a_route_after_choice_1
 
 label m_route_after_choice_1:
@@ -158,21 +158,21 @@ label a_route_after_choice_1:
     who "\"Hey Taylor! Happy to see you’re still here! What’d you think of the performance?\""
     "\"I thought it was super nice. There was a lot of passion in your guy’s performance.\""
     "I didn’t have the heart to tell her ska was so 20 years ago…"
-    p "\"Aw shit, thanks, dude! I’m really happy to hear you say that! I mean, you heard me in band… I sucked ASS.\""
+    who "\"Aw shit, thanks, dude! I’m really happy to hear you say that! I mean, you heard me in band… I sucked ASS.\""
     "She flashes another grin, and my own cheeks start to get even redder."
     "But she suddenly looks at me, curious, with the slightest hint of suspicion in her eyes…"
-    p "\"Hey… wait a minute, now that the lights are back on…\""
-    p "\"Taylor, you don’t look anything like how I remember you do…\""
+    who "\"Hey… wait a minute, now that the lights are back on…\""
+    who "\"Taylor, you don’t look anything like how I remember you do…\""
 
     jump choice_2
 
 menu choice_2:
     "Are you sure you're actually Taylor?"
 
-    "Tell her that you aren’t Taylor.":
+    "Tell her that you aren’t Taylor":
         jump at_route_after_choice_2
 
-    "Lie through your teeth.":
+    "Lie through your teeth":
         jump al_route_after_choice_2
 
 label al_route_after_choice_2:
@@ -181,15 +181,15 @@ label al_route_after_choice_2:
     "She looks back, leaning in closer as she evaluates what I just said."
     "Her glare gets even closer now, her expression unchanging as she continues to stare me down."
     "\"Um, aren’t you getting a little close-\""
-    p "\"No shut up, I'm getting a better look at you.\""
+    who "\"No shut up, I'm getting a better look at you.\""
 
     jump choice_3
 
 menu choice_3:
-    "Crack under the pressure.":
+    "Crack under the pressure":
         jump alc_route_after_choice_3
 
-    "Keep your cool.":
+    "Keep your cool":
         jump alk_route_after_choice_3
 
 label alc_route_after_choice_3:
@@ -201,46 +201,46 @@ label alc_route_after_choice_3:
 label alk_route_after_choice_3:
     "She gets even closer now. I can faintly hear her breathing as our eyes get closer. I can feel the droplets of sweat on my forehead."
     "She takes in an exaggerated sniff of air, closes her eyes, and collects her thoughts for a moment."
-    p "\"There it is…\""
+    who "\"There it is…\""
     "\"Ummm… There {i}what{/i} is exactly?\""
-    p "\"The scent of a lie.\""
+    who "\"The scent of a lie.\""
 
 label at_route_after_choice_2:
-    p "\"HA! I KNEW IT! You almost had me fooled there for a second, but I can always find out if someone isn’t telling the truth to me.\""
-    p "\"I’m sort of an ace detective if you didn’t know.\""
-    p "\"So why’d you do it bub? Why’d you gotta go and lie about being someone I actually {i}knew{/i}?\""
+    who "\"HA! I KNEW IT! You almost had me fooled there for a second, but I can always find out if someone isn’t telling the truth to me.\""
+    who "\"I’m sort of an ace detective if you didn’t know.\""
+    who "\"So why’d you do it bub? Why’d you gotta go and lie about being someone I actually {i}knew{/i}?\""
     "Hey wait a second, I didn’t even {i}want{/i} to be this Taylor person or whatever. You just assumed I was them when we first started talking!"
     "For the first time, she looks absolutely flabbergasted at what I just said."
     "For the first time since we’ve met, I think I’ve truly caught her at a loss for words."
-    p "\"…oh shit… did I actually do that again…\""
+    who "\"…oh shit… did I actually do that again…\""
     "She smacks her forehead with a loud thud, face flushing red after making such a social blunder."
-    p "\"Damnit! That’s my bad dude. This has been like the second time this month.\""
-    p "\"I just get {i}way{/i} too excited at the prospect of meeting an old friend. Totally didn’t mean to put you on the spot there.\""
+    who "\"Damnit! That’s my bad dude. This has been like the second time this month.\""
+    who "\"I just get {i}way{/i} too excited at the prospect of meeting an old friend. Totally didn’t mean to put you on the spot there.\""
     "\"Oh, well I mean it’s not a big deal. It’s actually been rather exciting talking to you if I’m being honest.\""
-    p "\"Oh really now? Huh, well if that’s the case…\""
+    who "\"Oh really now? Huh, well if that’s the case…\""
     "She calls over the bartender for a second round of drinks. She offers one to me, which I happily receive."
-    p "\"Why don’t we get to know each other a little better?\""
+    who "\"Why don’t we get to know each other a little better?\""
     "\"Wait, really? With someone like me?\""
-    p "\"Well, I mean sure why not? You’re pretty cute and I got a little bit of time to kill before my next performance. And besides…\""
-    p "\"In these times, it’s always nice to have another friend out there!\""
-    p "\"So stranger, since we haven’t been properly introduced.\""
+    who "\"Well, I mean sure why not? You’re pretty cute and I got a little bit of time to kill before my next performance. And besides…\""
+    who "\"In these times, it’s always nice to have another friend out there!\""
+    who "\"So stranger, since we haven’t been properly introduced.\""
 
 menu choice_4:
-    p "\"What's your name?\""
+    who "\"What's your name?\""
 
-    "Say name is Taylor.":
+    "Say name is Taylor":
         jump att_route_after_choice_4
 
-    "Type in your real name.":
+    "Type in your real name":
         jump atn_route_after_choice_4
 
 label att_route_after_choice_4:
     "\"Well, funnily enough, my name is Taylor.\""
-    p "\"Wait a second, you mean to tell me that your real name is actually Taylor?\""
+    who "\"Wait a second, you mean to tell me that your real name is actually Taylor?\""
     "\"Yeah.\""
-    p "\"And that you aren’t the Taylor I knew back in high school from band class? The Taylor I totally may or may not have had a crush on?\""
+    who "\"And that you aren’t the Taylor I knew back in high school from band class? The Taylor I totally may or may not have had a crush on?\""
     "\"Wait a second you never said that you had a crush on this Taylor bozo.\""
-    p "\"Nah I’m just kidding. I know you’re not them, it was just a little joke!\""
+    who "\"Nah I’m just kidding. I know you’re not them, it was just a little joke!\""
 
     jump atn_2
 
@@ -259,8 +259,122 @@ label atn_route_after_choice_4:
             povname = "Taylor"
     
     label atn_3:
-    p "\"[povname].\""
+    who "\"[povname].\""
     "She seems to let it linger in the air, trying hard to remember it on the first go."
+    "After a moment, she extends her hand with a smirk."
+    p "\"The name is Prose. The pleasure is all yours.\""
+    "I grab her hand and shake it back, surprised by the firm grip she offers to me."
+    "That hand is gonna be sore for a bit."
+    "But it really is nice to have a formal introduction with her, after all this time."
+    "Hey, wait a minute. Did she call me cute a few minutes ago?"
+    p "\"So, [povname], since we’re pretty much perfect strangers right now, why don’t you tell me a bit about yourself?\""
+
+menu choice_5:
+    p "\"What do you do when you ain’t watching shitty ska bands perform in local dives?\""
+
+    "Say that I’m a music teacher for young kids":
+        jump atnm_route_after_choice_5
+
+    "Say that I’m a fitness instructor":
+        jump atnf_route_after_choice_5
+
+    "I’m actually unemployed...But I can’t let her know that! (Lie again)":
+        jump atnp_route_after_choice_5
+
+label atnm_route_after_choice_5:
+    "I work at a little middle school on the outskirts of town. I help kids learn to play music."
+    p "\"So you do have a history with music! That's just perfect!\""
+    p "\"Maybe you can give me lessons sometime. I’d always love some more tips about my trombone playing skills.\""
+
+    jump atnxc_route
+
+label atnf_route_after_choice_5:
+    "I’m employed at a private gym located downtown. I help people schedule workouts and meals for a lot of corporate types."
+    p "\"Oh, you work out as well?\""
+    "Yeah, I like to go every once in a while. I can’t lift too much, but I’m happy with the progress I’m making."
+    p "\"Hell yeah dude. All about the journey rather than the destination.\""
+    "If you have the time, I'd be more than happy to take you there. You know, complimentary employee guest and everything."
+    p "\"I might just take you up on that.\""
+
+    jump atnxc_route
+
+label atnp_route_after_choice_5:
+    "Oh man… I can’t disappoint her and let her know that I don’t have a job right now…"
+    "What would she think of me if she found out I currently don’t have a stable source of income?"
+    "I gotta say something cool, something believable…"
+    "\"I like to hunt ghosts and investigate the paranormal. You know, like haunted houses and stuff like that.\""
+    "OH GOD WHY DID I SAY THAT?????"
+    "This noticeably catches her off guard, as she does a double take on her beer and chokes a bit."
+    "She takes a moment to catch her breath, a look of disbelief on her face."
+    p "\"You can’t be serious! How do you even make money?\""
+    "\"Oh, you know, I record myself roaming haunted houses and post it on the internet. I’m actually rather popular on social media.\""
+    "She starts to stare me down again, judging as to whether or not I’m serious about this."
+
+    jump choice_6
+
+menu choice_6:
+    "Her gaze penetrates into my very soul. I don’t know what to do…"
+        
+
+    "Tell the truth":
+        jump atnpt_route_after_choice_6
+
+    "DOUBLE OR NOTHING":
+        jump atnpd_route_after_choice_6
+
+label atnpt_route_after_choice_6:
+    "\"Okay fine I give I give! I’m really just unemployed right now! Quit staring so hard!\""
+    p "\"Dude, why would you lie about that? There’s nothing to be ashamed of if you are unemployed.\""
+    p "\"To be honest, I was in-between jobs myself not too long ago. Trust me man, you’ll find one eventually.\""
+    "Oh… thanks Prose. It means a lot to hear you-"
+    p "\"But you better stop lying to me about this sorta thing. I don’t appreciate it when people lie to me, especially if they do it {i}constantly.{/i}\""
+    "\"...noted…\""
+    p "\"Glad to hear it! We could probably do something cheap if we were gonna go out again…\""
+    "Maybe go to a museum or catch a movie or something…"
+
+    jump atnxc_route
+
+label atnpd_route_after_choice_6:
+    "\"Okay maybe my channel isn't actually that popular, but it's getting there!\""
+    p "\"Dude.\""
+    p "\"That is so…\""
+    p "\"Cool! Who cares if your not social media famous or anything! You get to check out haunted houses for a living!\""
+    "Wait a minute… She’s actually {i}believing{/i} what I’m saying?"
+    p "\"Wait before we go any further… do you actually believe in any of that stuff?\""
+    "Uhm...what do you mean?"
+    p "\"Oh, you know, like ghosts, vampires, zombies…\""
+
+    jump choice_7
+
+menu choice_7:
+    p "\"…werewolves\""
+
+    "Yes. I want to believe":
+        jump atndy_route_after_choice_7        
+
+    "Nah, it's all just a hoax":
+        jump atndn_route_after_choice_7
+
+label atndy_route_after_choice_7:
+    "100% percent. There is something out there, it's only a matter of time until we discover it."
+    "Her eyes light up when she hears this."
+    p "\"Hell yeah dude! You gotta take me along for one of your tours or whatever! Paranormal stuff is totally up my alley!\""
+    
+    jump atnxc_route
+
+label atndn_route_after_choice_7:
+    "No… not really. I don’t actually believe that there’s anything else out there."
+    p "\"Oh… I see…\""
+    "This is quite obviously not what she wanted to hear."
+    p "\"Well then I’ll just have to change your mind the next time we meet up!\""
+
+    jump atnxc_route
+
+# Unifier
+label atnxc_route:
+    "atnx route."
+    
+
 
 label end_game:
 
