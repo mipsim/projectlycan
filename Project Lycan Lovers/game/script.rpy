@@ -9,6 +9,8 @@ define who = Character("???")
 define whoo = Character("??? #2")
 define p = Character("Prose")
 
+define pov = Character("[povname]")
+
 # The game starts here.
 
 label start:
@@ -231,6 +233,34 @@ menu choice_4:
 
     "Type in your real name.":
         jump atn_route_after_choice_4
+
+label att_route_after_choice_4:
+    "\"Well, funnily enough, my name is Taylor.\""
+    p "\"Wait a second, you mean to tell me that your real name is actually Taylor?\""
+    "\"Yeah.\""
+    p "\"And that you aren’t the Taylor I knew back in high school from band class? The Taylor I totally may or may not have had a crush on?\""
+    "\"Wait a second you never said that you had a crush on this Taylor bozo.\""
+    p "\"Nah I’m just kidding. I know you’re not them, it was just a little joke!\""
+
+    jump atn_2
+
+label atn_route_after_choice_4:
+    python:
+        povname = renpy.input("Well my real name is", length=32)
+        povname = povname.strip()
+
+        if not povname:
+            povname = "Taylor"
+
+    jump atn_3
+
+    label atn_2:
+        python:
+            povname = "Taylor"
+    
+    label atn_3:
+    p "\"[povname].\""
+    "She seems to let it linger in the air, trying hard to remember it on the first go."
 
 label end_game:
 
