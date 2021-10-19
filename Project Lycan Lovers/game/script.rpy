@@ -10,25 +10,15 @@ define whoo = Character("??? #2")
 define p = Character("Prose")
 
 define pov = Character("[povname]")
+define j = "[job]"
 
-# The game starts here.
-
+# Opening
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    play music "audio/bensoundjazz.mp3" fadein 2.0
 
     #Location: Street
     scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    # show eileen happy
-
-    # Opening [1-12]
 
     "It is a cool October night in the city as I roam its crowded streets."
     "The sky is lit by the orange incandescent lights and a moon waning in the sky above me."
@@ -60,7 +50,7 @@ label m_route_after_choice_1:
     "Going back home and watching a cheesy horror flick ain’t that bad of an idea!"
 
     #Location: Apartment
-    #scene ---
+    scene bg apartment
     "{i}Back at the apartment{/i}..."
     
     "A few hours have passed, the sky has gotten darker, and the lights are off in my humble abode."
@@ -95,7 +85,7 @@ label a_route_after_choice_1:
     "Prepared for just about anything, I open the door."
 
     # Location: Concert Bar
-    #scene --- 
+    scene bg bar
 
     "What greets me is an inviting, warmly lit bar scene, like something you only see in movies."
     "The bar is wide and accommodating, stools lining its outer perimeter and drinks lining glass shelves along the wall."
@@ -147,6 +137,10 @@ label a_route_after_choice_1:
     "Her shades barely contain the smug aura that she is radiating."
     "I'm absolutely mesmerized by the display. It's like she's superhuman with how much endurance she displays."
     "Just who is this girl? "
+
+    # Location: Prose Close-up
+    #scene --- 
+
     "I take another sip from my drink, when a sickly feeling comes over me…"
     "I like this girl, and she seems interested in me, but…"
     "She still doesn't know I'm not Taylor!"
@@ -272,16 +266,24 @@ label atn_route_after_choice_4:
     "Hey, wait a minute. Did she call me cute a few minutes ago?"
     p "\"So, [povname], since we’re pretty much perfect strangers right now, why don’t you tell me a bit about yourself?\""
 
+
+# Set Character Job
 menu choice_5:
     p "\"What do you do when you ain’t watching shitty ska bands perform in local dives?\""
 
     "Say that I’m a music teacher for young kids":
+        python:
+            job = "musician"
         jump atnm_route_after_choice_5
 
     "Say that I’m a fitness instructor":
+        python:
+            job = "fitness instructor"
         jump atnf_route_after_choice_5
 
     "I’m actually unemployed...But I can’t let her know that! (Lie again)":
+        python:
+            job = "unemployed"
         jump atnp_route_after_choice_5
 
 label atnm_route_after_choice_5:
@@ -402,6 +404,9 @@ label atnxc_route:
     p "\"See you then.\""
     "She gives me one more wink before she puts on her shades again and heads for the stage."
     p "\"OKAY DARYL YOU DICK I’M COMING OVER JESUS!\""
+
+    hide prose happy
+
     "What a woman. It’s only after she's gone that I realize how late it actually is."
     "Every bone in my body is begging for me to head back home to bed, and to be quite honest, I don’t have the heart to refuse."
     "I make my way outside as I start to hear the band launch into their next set. It’s just as energetic as before, if not more so."
@@ -409,6 +414,13 @@ label atnxc_route:
     "I make my way back to my apartment, humming a tune from Prose’s band as I walk along, eager for tomorrow."
     "Tonight I had met one hell of a character, and on the bright side, she was nice enough to keep me company on a night like Halloween."
     "I don’t know why, but I can tell that tomorrow is gonna be unforgettable."
+
+    #show bg logo
+    #with fade
+    #pause 5
+
+    show bg logo
+    $ renpy.pause(3, hard=True)
 
 label end_game:
 
