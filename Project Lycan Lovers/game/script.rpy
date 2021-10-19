@@ -372,9 +372,12 @@ label atndn_route_after_choice_7:
 
 # Unifier
 label atnxc_route:
-    "atnx route."
-    
-
+    "Hey, wait a minute…"
+    "\"Are you saying that you want to meet up again?\""
+    p "\"I mean I thought it was obvious, but yes I’m saying exactly that.\""
+    p "\"C’mon dude, you gotta learn to take a hint.\""
+    "I can’t believe my luck. And to think, I was debating whether or not to go home just a few hours ago!"
+    p "\"If you’re not too busy tomorrow, why don’t you show me around? I don’t have any plans for Halloween and I’d hate to spend it alone.\""
 
 label end_game:
 
