@@ -112,6 +112,9 @@ label a_route_after_choice_1:
     "There is a palpable excitement in the air, as a rather large audience crowds around the stage, eager for the show to start."
     "The outer lights begin to dim and the band is ready to begin, but there seems to be a person missing…"
     "All of a sudden, I feel someone brush my shoulder and walk by me."
+
+    show prose happy
+
     who "\"Oh, sorry about that! My bad dude.\""
     "She turns around to apologize, but I can barely see her in the darkened room."
     who "\"Hey, wait a minute… haven’t I seen you before…\""
