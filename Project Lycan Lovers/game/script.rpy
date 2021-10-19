@@ -46,10 +46,10 @@ label start:
 menu choice_1:
     "So what should I do?"
 
-    "Go back home and watch some horror movies":
+    "Go back home and watch some horror movies.":
         jump m_route_after_choice_1
 
-    "Go on an adventure":
+    "Go on an adventure.":
         jump a_route_after_choice_1
 
 label m_route_after_choice_1:
@@ -161,6 +161,76 @@ label a_route_after_choice_1:
     "But she suddenly looks at me, curious, with the slightest hint of suspicion in her eyes…"
     p "\"Hey… wait a minute, now that the lights are back on…\""
     p "\"Taylor, you don’t look anything like how I remember you do…\""
+
+    jump choice_2
+
+menu choice_2:
+    "Are you sure you're actually Taylor?"
+
+    "Tell her that you aren’t Taylor.":
+        jump at_route_after_choice_2
+
+    "Lie through your teeth.":
+        jump al_route_after_choice_2
+
+label al_route_after_choice_2:
+    "\"Wha- what’re you talking about? I’m definitely Taylor!\""
+    "My voice cracks at the tail end of my terrible bluff."
+    "She looks back, leaning in closer as she evaluates what I just said."
+    "Her glare gets even closer now, her expression unchanging as she continues to stare me down."
+    "\"Um, aren’t you getting a little close-\""
+    p "\"No shut up, I'm getting a better look at you.\""
+
+    jump choice_3
+
+menu choice_3:
+    "Crack under the pressure.":
+        jump alc_route_after_choice_3
+
+    "Keep your cool.":
+        jump alk_route_after_choice_3
+
+label alc_route_after_choice_3:
+    "\"Okay fine I give! I’m not actually Taylor!\""
+    "She finally backs off, a swelling sense of pride showing as she figures out my ruse."
+
+    jump at_route_after_choice_2
+
+label alk_route_after_choice_3:
+    "She gets even closer now. I can faintly hear her breathing as our eyes get closer. I can feel the droplets of sweat on my forehead."
+    "She takes in an exaggerated sniff of air, closes her eyes, and collects her thoughts for a moment."
+    p "\"There it is…\""
+    "\"Ummm… There {i}what{/i} is exactly?\""
+    p "\"The scent of a lie.\""
+
+label at_route_after_choice_2:
+    p "\"HA! I KNEW IT! You almost had me fooled there for a second, but I can always find out if someone isn’t telling the truth to me.\""
+    p "\"I’m sort of an ace detective if you didn’t know.\""
+    p "\"So why’d you do it bub? Why’d you gotta go and lie about being someone I actually {i}knew{/i}?\""
+    "Hey wait a second, I didn’t even {i}want{/i} to be this Taylor person or whatever. You just assumed I was them when we first started talking!"
+    "For the first time, she looks absolutely flabbergasted at what I just said."
+    "For the first time since we’ve met, I think I’ve truly caught her at a loss for words."
+    p "\"…oh shit… did I actually do that again…\""
+    "She smacks her forehead with a loud thud, face flushing red after making such a social blunder."
+    p "\"Damnit! That’s my bad dude. This has been like the second time this month.\""
+    p "\"I just get {i}way{/i} too excited at the prospect of meeting an old friend. Totally didn’t mean to put you on the spot there.\""
+    "\"Oh, well I mean it’s not a big deal. It’s actually been rather exciting talking to you if I’m being honest.\""
+    p "\"Oh really now? Huh, well if that’s the case…\""
+    "She calls over the bartender for a second round of drinks. She offers one to me, which I happily receive."
+    p "\"Why don’t we get to know each other a little better?\""
+    "\"Wait, really? With someone like me?\""
+    p "\"Well, I mean sure why not? You’re pretty cute and I got a little bit of time to kill before my next performance. And besides…\""
+    p "\"In these times, it’s always nice to have another friend out there!\""
+    p "\"So stranger, since we haven’t been properly introduced.\""
+
+menu choice_4:
+    p "\"What's your name?\""
+
+    "Say name is Taylor.":
+        jump att_route_after_choice_4
+
+    "Type in your real name.":
+        jump atn_route_after_choice_4
 
 label end_game:
 
