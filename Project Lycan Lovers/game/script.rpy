@@ -12,6 +12,16 @@ define p = Character("Prose")
 define pov = Character("[povname]")
 define j = "[job]"
 
+# ATL
+transform zoom_dissolve:
+    xalign 0.5 yalign 1.0
+    alpha .0 zoom .75
+    linear .25 alpha 1.0 zoom 1.0
+    on hide:
+        xalign 0.5 yalign 1.0
+        alpha 1.0 zoom 1.0
+        linear .25 alpha .0 zoom .75
+
 # Opening
 label start:
 
@@ -103,7 +113,7 @@ label a_route_after_choice_1:
     "The outer lights begin to dim and the band is ready to begin, but there seems to be a person missing…"
     "All of a sudden, I feel someone brush my shoulder and walk by me."
 
-    show prose happy
+    show prose happy at zoom_dissolve
 
     who "\"Oh, sorry about that! My bad dude.\""
     "She turns around to apologize, but I can barely see her in the darkened room."
