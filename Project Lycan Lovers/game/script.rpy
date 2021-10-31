@@ -116,25 +116,35 @@ label a_route_after_choice_1:
     "Well, it isn’t exactly the {i}first{/i} thing I would have expected, but I won’t say no to free entertainment."
     "I grab a stool at the bar and order a beer. One of the bartenders, a younger woman with dyed red hair, nods."
     "She hands me a bottle as I get comfy, eager as I focus my attention on the stage."
+
+    # FIXME: Sound FX Here
+
     "The guitarist tunes his strings, the bassist practices a few licks, the drummer kicks his pedal…"
     "The singer taps the mic for a soundcheck and the trumpeter plays their scales."
     "There is a palpable excitement in the air, as a rather large audience crowds around the stage, eager for the show to start."
     "The outer lights begin to dim and the band is ready to begin, but there seems to be a person missing…"
     "All of a sudden, I feel someone brush my shoulder and walk by me."
-
-    show prose happy at zoom_dissolve
-
     who "\"Oh, sorry about that! My bad dude.\""
     "She turns around to apologize, but I can barely see her in the darkened room."
+
+    # FIXME: Black Silhouette
+    show prose happy at zoom_dissolve
+
     who "\"Hey, wait a minute… haven’t I seen you before…\""
     who "\"Taylor? No way! Dude, how’ve you been? I haven’t seen you since-\""
     whoo "\"Prose! Get your ass over here!\""
     "The lead singer, with a look of annoyance on his face, waves at the woman talking to me, beckoning her to come onstage."
+
+    # show prose angry
     p "\"Ah, shit. My bad… I gotta go do this concert for a sec. Stay after the show and we’ll catch up and grab some drinks!\""
+
+    # hide prose angry
     "Before I get the chance to say anything, she dashes off, pushing her way through the crowd as her band members shake their heads."
     "I didn’t even have the chance to correct her…"
     "And tell her that I have no idea who Taylor is!"
     "But soon enough she’s under the spotlight and as she grabs her trombone, my heart skips a beat."
+    
+    # show prose happy
     "Before me is, quite possibly, the most gorgeous woman I’ve ever seen."
     "She has short, dark brown hair that perfectly frames her face."
     "Her outfit is well fitted, a simple white collared shirt, a loose black tie, jeans, and a pair of shades adorning her face."
@@ -155,6 +165,8 @@ label a_route_after_choice_1:
     "I take another sip from my drink, when a sickly feeling comes over me…"
     "I like this girl, and she seems interested in me, but…"
     "She still doesn't know I'm not Taylor! She’s mistaken me for someone else!"
+    
+    # hide prose happy
     "The last song is coming to a close, and I hear the big finale pop off."
     "The crowd goes crazy as they cheer and holler, praising the band's amazing performance. "
     "Soon enough, they all make their way offstage, likely to cool down and get ready for their next set later on in the night. "
@@ -163,6 +175,8 @@ label a_route_after_choice_1:
     "How can I convince this absolute stranger to go on a date with me???"
     "She’s making her way over to me, chatting up the crowd and grabbing herself a drink the bartender had pre-made for her."
     "It seems that she goes to this place pretty often. She waves me over, takes a sip of her cocktail, and smiles."
+    
+    # show prose happy
     p "\"Hey Taylor! Happy to see you’re still here! What’d you think of the performance?\""
     mc "\"I thought it was super nice. There was a lot of passion in your guy’s performance.\""
     "I didn’t have the heart to tell her ska was so 20 years ago…"
@@ -186,7 +200,14 @@ menu choice_2:
 label al_route_after_choice_2:
     mc "\"Wha- what’re you talking about? I’m definitely Taylor!\""
     "My voice cracks at the tail end of my terrible bluff."
+
+    # show prose neutral
     "She looks back, leaning in closer as she evaluates what I just said."
+
+    # Animation: Prose gets closer
+    # show prose neutral:
+    #    linear .25 alpha 1.0 zoom 2.0 xalign 0.8 yalign .2
+    
     "Her glare gets even closer now, her expression unchanging. It’s as if she's staring deep into my soul."
     mc "\"Um, aren’t you getting a little close-\""
     p "\"No shut up, I'm getting a better look at you.\""
@@ -204,13 +225,17 @@ label alc_route_after_choice_3:
     mc "\"Okay fine I give! I’m not actually Taylor!\""
     "She finally backs off, a swelling sense of pride showing as she figures out my ruse."
 
+    # Animation: Prose steps back
+    # show prose happy:
+    #    linear .25 alpha 1.0 zoom 1.0 xalign 0.5 yalign 1.0
+
     jump at_route_after_choice_2
 
 label alk_route_after_choice_3:
 
     # Animation: Prose gets closer
     show prose happy:
-        linear .25 alpha 1.0 zoom 2.0 xalign 0.8 yalign .2
+        linear .25 alpha 1.0 zoom 2.2 xalign 0.85 yalign .2
 
 
     "She gets even closer now. I can faintly hear her breathing as our eyes get closer. I can feel the droplets of sweat on my forehead."
@@ -231,17 +256,26 @@ label at_route_after_choice_2:
     p "\"I’m sort of an ace detective if you didn’t know. I can read people like the back of my hand!\""
     p "\"So why’d you do it bub? Why’d you gotta go and lie about being someone I actually {i}knew{/i}?\""
     mc "\"Hey wait a second, I didn’t even {i}want{/i} to be this Taylor person or whatever. You just assumed I was them when we first started talking!\""
+    
+    # show prose surprise
+
     "For the first time, she looks absolutely flabbergasted at what I just said."
     "For the first time, I think I’ve truly caught her at a loss for words."
     p "\"…oh shit… did I actually do that again…\""
     "She smacks her forehead with a loud thud, face flushing red after making such a fool of herself."
+    
+    # show prose angry
     p "\"Damnit! That’s my bad dude. This has been like the second time this month.\""
+
+    # show prose confused
     p "\"I just get {i}way{/i} too excited at the prospect of meeting an old friend. Totally didn’t mean to put you on the spot there.\""
     mc "\"Oh, well I mean it’s not a big deal. It’s actually been rather exciting talking to you if I’m being honest.\""
     p "\"Oh really now? Huh, well if that’s the case…\""
     "She calls over the bartender for a second round of drinks. She offers one to me, which I happily receive."
     p "\"Why don’t we get to know each other a little better?\""
     mc "\"Wait, really? With someone like me?\""
+    
+    # show prose happy
     p "\"Well, I mean sure why not? You’re pretty cute and I got a little bit of time to kill before my next performance. And besides…\""
     p "\"It’s not like you or I have anything better to do! Hehe...\""
     p "\"So stranger, since we haven’t been properly introduced.\""
@@ -259,6 +293,8 @@ label att_route_after_choice_4:
     mc "\"Well, funnily enough, my name is Taylor.\""
     p "\"Wait a second, you mean to tell me that your real name is actually Taylor?\""
     mc "\"Yeah.\""
+
+    # show prose neutral
     p "\"And that you aren’t the Taylor I knew back in high school from band class? The Taylor I totally may or may not have had a crush on?\""
     mc "\"Wait a second you never said that you had a crush on this Taylor bozo.\""
     p "\"Nah I’m just teasing you. I know you’re not them.\""
@@ -283,6 +319,8 @@ label atn_route_after_choice_4:
     p "\"[povname].\""
     "She seems to let it linger in the air, trying hard to remember it on the first go."
     "After a moment, she extends her hand with a smirk."
+    
+    # show prose happy
     p "\"The name is Prose. The pleasure is all yours.\""
     "I return the handshake, surprised by the firm grip she offers to me.."
     "That hand is gonna be sore for a bit."
@@ -344,7 +382,6 @@ label atnp_route_after_choice_5:
 menu choice_6:
     "Her gaze penetrates into my very soul. I don’t know what to do…"
         
-
     "Tell the truth":
         jump atnpt_route_after_choice_6
 
@@ -377,6 +414,7 @@ label atnpd_route_after_choice_6:
     jump choice_7
 
 menu choice_7:
+    # show prose confused
     p "\"…werewolves\""
 
     "Yes. I want to believe":
@@ -388,6 +426,8 @@ menu choice_7:
 label atndy_route_after_choice_7:
     mc "\"100 percent. There is {i}something{/i} out there, it's only a matter of time until we discover it.\""
     "Her eyes light up when she hears this."
+    
+    # show prose happy
     p "\"Hell yeah dude! You gotta take me along for one of your tours or whatever! Paranormal stuff is totally up my alley!\""
     
     jump atnxc_route
@@ -396,6 +436,8 @@ label atndn_route_after_choice_7:
     mc "\"No… not really. I don’t actually believe that there’s anything else out there.\""
     p "\"Oh… I see…\""
     "This is quite obviously not what she wanted to hear."
+    
+    # show prose happy
     p "\"Well then I’ll just have to change your mind the next time we meet up!\""
 
     jump atnxc_route
@@ -448,11 +490,12 @@ label atnxc_route:
     "Act 1 Complete."
 
 label d_route:
-    dev "Hey you! Player! We just wanted to say thank you for playing our little dating game!"
-    dev "This build is currently a prototype, and we hope to update the game in the future with different locations, scenes, art, and much more!"
-    dev "If you enjoyed what you played, please give us a rating and let us know what we can improve on."
-    dev "We are hoping to get Act 2 out by the end of the year! If you want any updates, feel free to follow @InfernoGuy13 on Twitter for more info."
-    dev "Have a good one!"
+    #show prose happy
+    p "Hey you! Player! We just wanted to say thank you for playing our little dating game!"
+    p "This build is currently a prototype, and we hope to update the game in the future with different locations, scenes, art, and much more!"
+    p "If you enjoyed what you played, please give us a rating and let us know what we can improve on."
+    p "We are hoping to get Act 2 out by the end of the year! If you want any updates, feel free to follow @InfernoGuy13 on Twitter for more info."
+    p "Have a good one!"
 
     jump choice_end
 
