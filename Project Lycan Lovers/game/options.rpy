@@ -23,13 +23,26 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "0.1"
+define config.version = "0.2.0"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+    Developed by Team Make a Thing
+
+    Patrick Villegas - Narrative Design
+    
+    Michael Sim - Programming
+    
+    Marc-Julian Galicha - Production
+
+    Stephanie Ko - Art
+
+    Royalty Free Music from Bensound
+
+    Sound Effects from Freesound
 """)
 
 
