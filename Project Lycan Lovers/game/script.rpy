@@ -8,6 +8,7 @@ define tv = Character("Television")
 define who = Character("???")
 define whoo = Character("??? #2")
 define p = Character("Prose")
+define dev = Character("Patrick")
 
 define pov = Character("[povname]")
 define j = "[job]"
@@ -25,6 +26,7 @@ transform zoom_dissolve:
 # Opening
 label start:
 
+    # Audio: Default
     play music "audio/bensoundjazz.mp3" fadein 2.0
 
     #Location: Street
@@ -100,6 +102,7 @@ label a_route_after_choice_1:
     # Location: Concert Bar
     scene bg bar
 
+    # Audio: Concert Bar
     stop music fadeout 2.0
     play music "audio/bensoundrock.mp3" fadein 2.0
 
@@ -205,6 +208,7 @@ label alc_route_after_choice_3:
 
 label alk_route_after_choice_3:
 
+    # Animation: Prose gets closer
     show prose happy:
         linear .25 alpha 1.0 zoom 2.0 xalign 0.8 yalign .2
 
@@ -215,6 +219,7 @@ label alk_route_after_choice_3:
     mc "\"Ummm… There {i}what{/i} is exactly?\""
     p "\"The scent of a liar.\""
 
+    # Animation: Prose steps back
     show prose happy:
         linear .25 alpha 1.0 zoom 1.0 xalign 0.5 yalign 1.0
 
@@ -442,19 +447,23 @@ label atnxc_route:
 
     "Act 1 Complete."
 
-    #show bg logo
-    #with fade
-    #pause 5
-
-    show bg logo
-    $ renpy.pause(3, hard=True)
-
 label d_route:
-    "Hey you! Player! We just wanted to say thank you for playing our little dating game!"
-    "This build is currently a prototype, and we hope to update the game in the future with different locations, scenes, art, and much more!"
-    "If you enjoyed what you played, please give us a rating and let us know what we can improve on."
-    "We are hoping to get Act 2 out by the end of the year! If you want any updates, feel free to follow @InfernoGuy13 on Twitter for more info."
-    "Have a good one!"
+    dev "Hey you! Player! We just wanted to say thank you for playing our little dating game!"
+    dev "This build is currently a prototype, and we hope to update the game in the future with different locations, scenes, art, and much more!"
+    dev "If you enjoyed what you played, please give us a rating and let us know what we can improve on."
+    dev "We are hoping to get Act 2 out by the end of the year! If you want any updates, feel free to follow @InfernoGuy13 on Twitter for more info."
+    dev "Have a good one!"
+
+    jump choice_end
+
+menu choice_end:
+    "What would you like to do?"
+
+    "Play Again":
+        jump start
+
+    "Exit to Main Menu":
+        jump end_game
 
 label end_game:
 

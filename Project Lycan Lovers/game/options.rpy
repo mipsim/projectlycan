@@ -30,6 +30,17 @@ define config.version = "0.1.1"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+    Developed by Team Make a Thing
+
+    Patrick Villegas - Narrative Design
+    
+    Michael Sim - Programming
+    
+    Marc-Julian Galicha - Production
+
+    Stephanie Ko - Art
+
+    Royalty Free Music from Bensound
 """)
 
 
