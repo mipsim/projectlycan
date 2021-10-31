@@ -41,6 +41,8 @@ define gui.about = _p("""
     Stephanie Ko - Art
 
     Royalty Free Music from Bensound
+
+    Sound Effects from Freesound
 """)
 
 

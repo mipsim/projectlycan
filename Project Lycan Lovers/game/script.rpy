@@ -104,7 +104,7 @@ label a_route_after_choice_1:
 
     # Audio: Concert Bar
     stop music fadeout 2.0
-    play music "audio/bensoundrock.mp3" fadein 2.0
+    play music "audio/bensoundrock.mp3" fadein 2.0 volume 0.5
 
     "What greets me is an inviting, warmly lit dive-in, the kind of establishment you only ever see in movies."
     "The venue is wide and accommodating, stools lining its outer perimeter and bottles of liquor on glass shelves along the wall."
@@ -117,8 +117,8 @@ label a_route_after_choice_1:
     "I grab a stool at the bar and order a beer. One of the bartenders, a younger woman with dyed red hair, nods."
     "She hands me a bottle as I get comfy, eager as I focus my attention on the stage."
 
-    # FIXME: Sound FX Here
-
+    play sound "audio/sfxsoundcheck.ogg" fadein 1.5
+    
     "The guitarist tunes his strings, the bassist practices a few licks, the drummer kicks his pedal…"
     "The singer taps the mic for a soundcheck and the trumpeter plays their scales."
     "There is a palpable excitement in the air, as a rather large audience crowds around the stage, eager for the show to start."
@@ -490,7 +490,7 @@ label atnxc_route:
     "Act 1 Complete."
 
 label d_route:
-    #show prose happy
+    show prose happy at zoom_dissolve
     p "Hey you! Player! We just wanted to say thank you for playing our little dating game!"
     p "This build is currently a prototype, and we hope to update the game in the future with different locations, scenes, art, and much more!"
     p "If you enjoyed what you played, please give us a rating and let us know what we can improve on."
