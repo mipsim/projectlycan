@@ -124,7 +124,7 @@ label a_route_after_choice_1:
     who "\"Taylor? No way! Dude, how’ve you been? I haven’t seen you since-\""
     whoo "\"Prose! Get your ass over here!\""
     "The lead singer, with a look of annoyance on his face, waves at the woman talking to me, beckoning her to come onstage."
-    who "\"Ah, shit. My bad… I gotta go do this concert for a sec. Stay after the show and we’ll catch up and grab some drinks!\""
+    p "\"Ah, shit. My bad… I gotta go do this concert for a sec. Stay after the show and we’ll catch up and grab some drinks!\""
     "Before I get the chance to say anything, she dashes off, pushing her way through the crowd as her band members shake their heads."
     "I didn’t even have the chance to correct her…"
     "And tell her that I have no idea who Taylor is!"
@@ -145,7 +145,7 @@ label a_route_after_choice_1:
     "As they perform their opener, the band’s enthusiasm starts to penetrate the air."
     "Suddenly, the crowd starts to go wild, banging their heads to the music and singing the lyrics as they all jam together."
     "The room breathes with life, the alcohol and performance mixing together to exhilarate the attendees."
-    "It's a gorgeously messy sight, yet all the while all I can do is focus on the mystery girl."
+    "It's a gorgeously messy sight, yet all the while all I can do is focus on Prose."
     "Five songs in and she hasn't even broken a sweat, blowing away at her trombone like it was second nature."
     "Her shades barely contain the smug aura that she is radiating."
     "I'm absolutely mesmerized by the display. Her near endurance is superhuman to say the least."
@@ -161,14 +161,14 @@ label a_route_after_choice_1:
     "How can I convince this absolute stranger to go on a date with me???"
     "She’s making her way over to me, chatting up the crowd and grabbing herself a drink the bartender had pre-made for her."
     "It seems that she goes to this place pretty often. She waves me over, takes a sip of her cocktail, and smiles."
-    who "\"Hey Taylor! Happy to see you’re still here! What’d you think of the performance?\""
+    p "\"Hey Taylor! Happy to see you’re still here! What’d you think of the performance?\""
     "\"I thought it was super nice. There was a lot of passion in your guy’s performance.\""
     "I didn’t have the heart to tell her ska was so 20 years ago…"
-    who "\"Aw shit, thanks, dude! I’m really happy to hear you say that! I mean, you heard me in band… I sucked ASS.\""
+    p "\"Aw shit, thanks, dude! I’m really happy to hear you say that! I mean, you heard me in band… I sucked ASS.\""
     "She flashes another grin, and my own cheeks start to get even redder."
     "But she suddenly looks at me, curious, with the slightest hint of suspicion in her eyes…"
-    who "\"Hey… wait a minute, now that the lights are back on…\""
-    who "\"Taylor, you don’t look anything like how I remember you do…\""
+    p "\"Hey… wait a minute, now that the lights are back on…\""
+    p "\"Taylor, you don’t look anything like how I remember you do…\""
 
     jump choice_2
 
@@ -187,7 +187,7 @@ label al_route_after_choice_2:
     "She looks back, leaning in closer as she evaluates what I just said."
     "Her glare gets even closer now, her expression unchanging. It’s as if she's staring deep into my soul."
     "\"Um, aren’t you getting a little close-\""
-    who "\"No shut up, I'm getting a better look at you.\""
+    p "\"No shut up, I'm getting a better look at you.\""
 
     jump choice_3
 
@@ -207,35 +207,35 @@ label alc_route_after_choice_3:
 label alk_route_after_choice_3:
     "She gets even closer now. I can faintly hear her breathing as our eyes get closer. I can feel the droplets of sweat on my forehead."
     "She takes in an exaggerated sniff of air, closes her eyes, and collects her thoughts for a moment."
-    who "\"There it is…\""
+    p "\"There it is…\""
     "\"Ummm… There {i}what{/i} is exactly?\""
-    who "\"The scent of a liar.\""
+    p "\"The scent of a liar.\""
 
     jump at_route_after_choice_2
 
 label at_route_after_choice_2:
-    who "\"HA! I KNEW IT! You almost had me fooled there for a second, but I can always find out if someone isn’t telling the truth to me.\""
+    p "\"HA! I KNEW IT! You almost had me fooled there for a second, but I can always find out if someone isn’t telling the truth to me.\""
     "She’s gloating over me, reveling in her own self given glory. It’s a little showboaty."
-    who "\"I’m sort of an ace detective if you didn’t know. I can read people like the back of my hand!\""
-    who "\"So why’d you do it bub? Why’d you gotta go and lie about being someone I actually {i}knew{/i}?\""
-    "Hey wait a second, I didn’t even {i}want{/i} to be this Taylor person or whatever. You just assumed I was them when we first started talking!"
+    p "\"I’m sort of an ace detective if you didn’t know. I can read people like the back of my hand!\""
+    p "\"So why’d you do it bub? Why’d you gotta go and lie about being someone I actually {i}knew{/i}?\""
+    "\"Hey wait a second, I didn’t even {i}want{/i} to be this Taylor person or whatever. You just assumed I was them when we first started talking!\""
     "For the first time, she looks absolutely flabbergasted at what I just said."
     "For the first time, I think I’ve truly caught her at a loss for words."
-    who "\"…oh shit… did I actually do that again…\""
+    p "\"…oh shit… did I actually do that again…\""
     "She smacks her forehead with a loud thud, face flushing red after making such a fool of herself."
-    who "\"Damnit! That’s my bad dude. This has been like the second time this month.\""
-    who "\"I just get {i}way{/i} too excited at the prospect of meeting an old friend. Totally didn’t mean to put you on the spot there.\""
+    p "\"Damnit! That’s my bad dude. This has been like the second time this month.\""
+    p "\"I just get {i}way{/i} too excited at the prospect of meeting an old friend. Totally didn’t mean to put you on the spot there.\""
     "\"Oh, well I mean it’s not a big deal. It’s actually been rather exciting talking to you if I’m being honest.\""
-    who "\"Oh really now? Huh, well if that’s the case…\""
+    p "\"Oh really now? Huh, well if that’s the case…\""
     "She calls over the bartender for a second round of drinks. She offers one to me, which I happily receive."
-    who "\"Why don’t we get to know each other a little better?\""
+    p "\"Why don’t we get to know each other a little better?\""
     "\"Wait, really? With someone like me?\""
-    who "\"Well, I mean sure why not? You’re pretty cute and I got a little bit of time to kill before my next performance. And besides…\""
-    who "\"It’s not like you or I have anything better to do! Hehe...\""
-    who "\"So stranger, since we haven’t been properly introduced.\""
+    p "\"Well, I mean sure why not? You’re pretty cute and I got a little bit of time to kill before my next performance. And besides…\""
+    p "\"It’s not like you or I have anything better to do! Hehe...\""
+    p "\"So stranger, since we haven’t been properly introduced.\""
 
 menu choice_4:
-    who "\"What's your name?\""
+    p "\"What's your name?\""
 
     "Say name is Taylor":
         jump att_route_after_choice_4
@@ -245,11 +245,11 @@ menu choice_4:
 
 label att_route_after_choice_4:
     "\"Well, funnily enough, my name is Taylor.\""
-    who "\"Wait a second, you mean to tell me that your real name is actually Taylor?\""
+    p "\"Wait a second, you mean to tell me that your real name is actually Taylor?\""
     "\"Yeah.\""
-    who "\"And that you aren’t the Taylor I knew back in high school from band class? The Taylor I totally may or may not have had a crush on?\""
+    p "\"And that you aren’t the Taylor I knew back in high school from band class? The Taylor I totally may or may not have had a crush on?\""
     "\"Wait a second you never said that you had a crush on this Taylor bozo.\""
-    who "\"Nah I’m just teasing you. I know you’re not them.\""
+    p "\"Nah I’m just teasing you. I know you’re not them.\""
 
     jump atn_2
 
@@ -268,7 +268,7 @@ label atn_route_after_choice_4:
             povname = "Taylor"
     
     label atn_3:
-    who "\"[povname].\""
+    p "\"[povname].\""
     "She seems to let it linger in the air, trying hard to remember it on the first go."
     "After a moment, she extends her hand with a smirk."
     p "\"The name is Prose. The pleasure is all yours.\""
@@ -374,7 +374,7 @@ menu choice_7:
         jump atndn_route_after_choice_7
 
 label atndy_route_after_choice_7:
-    "\"100% percent. There is {i}something{/i} out there, it's only a matter of time until we discover it.\""
+    "\"100 percent. There is {i}something{/i} out there, it's only a matter of time until we discover it.\""
     "Her eyes light up when she hears this."
     p "\"Hell yeah dude! You gotta take me along for one of your tours or whatever! Paranormal stuff is totally up my alley!\""
     
